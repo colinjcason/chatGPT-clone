@@ -85,7 +85,7 @@ input {
   border: none;
   background-color: rgba(255, 255, 255, 0.05);
   padding: 12px 15px;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px,
     rgba(0, 0, 0, 0.05) 0 -12px 30px,
@@ -103,4 +103,37 @@ input:focus {
   bottom: 15px;
   right: 0;
   cursor: pointer;
+}
+
+.feed {
+  overflow: scroll;
+  width: 100%;
+  padding: 0
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+.feed {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.feed li {
+  display: flex;
+  background-color: #444654;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.feed p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  text-align: left;
+}
+
+.feed p.role {
+  min-width: 100px;
 }
