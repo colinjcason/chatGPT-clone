@@ -74,6 +74,7 @@ const App = () => {
         <ul className='history'>
           {uniqueTitles?.map((uniqueTitle, index) => <li key={index} onClick={() => handleClick(uniqueTitle)}>{uniqueTitle}</li>)}
         </ul>
+        <button>Login</button>
         <nav>
           <p>Powered by chatGPT</p>
         </nav>
