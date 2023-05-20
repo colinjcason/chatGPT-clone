@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 const App = () => {
-  const [value, setValue] = useState(null)
+  const [value, setValue] = useState('')
   const [message, setMessage] = useState(null)
   const [prevChats, setPrevChats] = useState([])
   const [currentTitle, setCurrentTitle] = useState(null)
@@ -58,7 +58,7 @@ const App = () => {
         ]
       ))
     }
-  }, [message, currentTitle])
+  }, [message, currentTitle, value])
 
   console.log(prevChats)
 
